@@ -1,0 +1,145 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    margin: auto 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#section-1{
+    padding:1rem;
+    padding-top: 10px;
+    background-color:rgba(229, 238, 238, 0.4);
+    padding-bottom: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#section-1 h1{
+    font-size: 24px;
+    padding-top: 35px;
+    color: rgba(4, 168, 168, 0.9);
+    font-weight: bolder;
+}
+
+.money-content{
+    padding-top:  30px; 
+    padding-right: 15px;
+    font-size:20px;
+    font-weight: bold;
+    color: rgb(194, 223, 30);
+}
+
+.gain-content{
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height:1.7em;
+    font-weight:600;
+    color: gray;
+}
+
+#section-2{
+    padding:1rem;
+    background-color: rgb(82, 207, 207);
+    padding-bottom: 40px;
+}
+
+.monthly{
+    color: whitesmoke;
+}
+
+.dollar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 20px;
+}
+
+.dolls{
+   font-size: 26px;
+   color: white;
+}
+
+.access{
+    padding-top: 20px;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+button{
+    border: none;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(167, 241, 56);
+    box-shadow: 0 22px 18px 0 rgba(0,0,0,0.2),
+         0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      
+#section-3{
+    padding:1rem;
+    padding-bottom:30px;
+    background-color: rgb(32, 202, 146);
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.why{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+p{
+    color: rgb(233, 243, 245);
+    line-height:25px;
+}
+
+
+/* MEDIA SCREEN */
+
+@media screen and (min-width:480px) {
+    .main-container{
+        margin: 4rem auto;
+        max-width:768px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section-1{
+        grid-column: span 2;
+        box-shadow: 0px 0px  10px 0px rgba(0,0,0,0.2),
+        0 6px 20px 0 rgba(0,0,0,0.19);;
+      }
+
+      #section-2{
+        border-bottom-left-radius: 10px;
+      }
+      
+      .dollar-content{
+        width:35%;
+      }
+
+     
+      #section-3{
+        border-bottom-left-radius: 0;
+      }
+}
